@@ -2,7 +2,7 @@
 
 ### Introduction
 
-访问控制领域，涵盖了论文 [SRB-ABE](https://ieeexplore.ieee.org/abstract/document/7500106)、[HR-ABE](https://ieeexplore.ieee.org/abstract/document/9908577)、[EPF2DS](https://ieeexplore.ieee.org/abstract/document/10531248) 和 [GRANT](https://arxiv.org/abs/2412.01073) 等协议的实现。
+访问控制领域，涵盖了论文 [SRB-ABE](https://ieeexplore.ieee.org/abstract/document/9540689)、[HR-ABE](https://ieeexplore.ieee.org/abstract/document/10646706)、[EPF2DS](https://ieeexplore.ieee.org/abstract/document/10607924) 和 GRANT 等协议的实现。
 
 ### Features
 
@@ -19,22 +19,22 @@
 
 ### :memo: 文件概览
 
-- #### **GRANT**
+- #### **GRANT (ours) **
 
     - `C++_version`: 
     - `SGX_version`: 
 
 - #### **EPF2DS**
 
-    - `C++_version` :
+    - `C++_version`: only this version.
 
 - #### **HR-ABE**
 
-    - `SGX_version`: 
+    - `SGX_version`: only this version.
 
 - #### **SRB-ABE**
 
-    - `C++_version` : 主动权在`CP.cpp`
+    - `C++_version`: only this version.
 
 
 ### 核心算法测试案例
@@ -106,7 +106,6 @@ for (int pos: V3) cout << pos << " ";
 cout << "]\n";
 
 printf("\n================================================\n");
-bit_length = 4;
 for (int i = 0; i < pow(2, bit_length); i++)
 {
     auto [root, V] = TEalgorithm(i, bit_length);
