@@ -2,7 +2,7 @@
 
 ### Introduction
 
-访问控制领域，涵盖了论文 [SRB-ABE](https://ieeexplore.ieee.org/abstract/document/9540689)、[HR-ABE](https://ieeexplore.ieee.org/abstract/document/10646706)、[EPF2DS](https://ieeexplore.ieee.org/abstract/document/10607924) 和 GRANT 等协议的实现。
+访问控制领域，涵盖了论文 [SRB-ABE](https://ieeexplore.ieee.org/abstract/document/9540689)、[HR-ABE](https://ieeexplore.ieee.org/abstract/document/10646706)、[EPF2DS](https://ieeexplore.ieee.org/abstract/document/10607924) 和 GRANT 的实现。
 
 ### Features
 
@@ -19,7 +19,7 @@
 
 ### :memo: 文件概览
 
-- #### **GRANT (ours) **
+- #### **GRANT (ours)**
 
     - `C++_version`: 
     - `SGX_version`: 
