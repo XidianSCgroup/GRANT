@@ -1,4 +1,8 @@
-# GRANT: TEE-Aided Revocable Fine-Grained Access Control for IoT Environments
+# GRANT: TEE-Aided Secure Fine-Grained Access Control Service in Cloud
+
+### Abstract
+Attribute-based encryption (ABE) is a widely used cryptographic primitive for fine-grained access control over sensitive data stored in public cloud storage. However, the significant computational overhead of bilinear pairing in traditional ABE renders them impractical for resource-constrained users. Moreover, standard ABE fails to address critical realworld challenges, including attribute privacy leakage, dynamic user revocation, and over-reliance on honest-but-curious cloud service provider. In this paper, we proposed GRANT, offering TEE-aided (Trusted Execution Environment) secure fine-grained access control service in cloud. By synergistically combining ABE and TEE, GRANT provides the first comprehensive solution to these multifaceted challenges, simultaneously offering (1) fine-grained bilateral access control; (2) fully policy-hidden; (3) efficient user revocation; (4) secure partial outsourced decryp- tion; and (5) trusted verification of intermediate results. We formally present the concrete construction of GRANT and prove its security under a rigorous threat model. Both theoretical complexity analysis and experimental simulations demonstrate that GRANT offers superior functionality while maintaining performance comparable to state-of-the-art approaches, making it a practical and robust solution for secure data sharing in cloud.
+
 
 ### Introduction
 
@@ -21,25 +25,25 @@
 
 - #### **GRANT (ours)**
 
-    - `C++_version`: 
-    - `SGX_version`: 
+    - `C++_version`: `GRANT` implemented in C++
+    - `SGX_version`: For the sake of simplicity, `GRANT` implemented in SGX,
 
 - #### **EPF2DS**
 
-    - `C++_version`: only this version.
+    - `C++_version`: `EPF2DS` implemented in SGX
 
 - #### **HR-ABE**
 
-    - `SGX_version`: only this version.
+    - `SGX_version`: `HR-ABE` implemented in SGX
 
 - #### **SRB-ABE**
 
-    - `C++_version`: only this version.
+    - `C++_version`: `SRB-ABE` implemented in C++
 
 
 ### 核心算法测试案例
 
-#### 一、属性向量化测试
+#### 一、属性向量化测试 (支持通配符与门结构 + 向量内积加密)
 
 ```C++
 vector <string> alice_Attribute = {"+", "-", "+", "-", "+", "+", "+", "-", "+", "-"};  // 数据所有者属性集
@@ -276,7 +280,6 @@ pairing_clear(pairing);           // 释放配对对象内存
 
 ## :alarm_clock: TODO
 
-- 具体代码，待论文录用上传
 - 具体代码，待论文录用上传
 
 
