@@ -160,21 +160,21 @@ cout << "time_period = " << time_period << '\n';
 vector <pair<int, int>> RL1 = {{8, 1}};
 set<int> Y1 = bt.KUNodes(RL1, time_period);
 cout << "KUNodes Result (RL={(8,1)}): Y = [ ";
-for (int node: Y1) cout << node << " "; // 应输出3 4
+for (int node: Y1) cout << node << " ";
 cout << "]\n";
 
 // 示例2
 vector <pair<int, int>> RL2;
 set<int> Y2 = bt.KUNodes(RL2, time_period);
 cout << "KUNodes Result (empty RL): Y = [ ";
-for (int node: Y2) cout << node << " "; // 应输出1
+for (int node: Y2) cout << node << " ";
 cout << "]\n";
 
 // 示例3：
 vector <pair<int, int>> RL3 = {{8, 0}, {11, 1}};
 set<int> Y3 = bt.KUNodes(RL3, time_period);
 cout << "KUNodes Result (RL={(8,0),(11,1)}): Y = [ ";
-for (int node: Y3) cout << node << " "; // 应输出3
+for (int node: Y3) cout << node << " ";
 cout << "]\n";
 
 
@@ -182,7 +182,7 @@ cout << "]\n";
 vector <pair<int, int>> RL4 = {{8, 0}, {9, 1}, {14, 10}};
 set<int> Y4 = bt.KUNodes(RL4, time_period);
 cout << "KUNodes Result (RL={(8,0),(9,1)}): Y = [ ";
-for (int node: Y4) cout << node << " "; // 应输出3
+for (int node: Y4) cout << node << " ";
 cout << "]\n";
 ```
 
